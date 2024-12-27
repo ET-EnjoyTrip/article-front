@@ -1,0 +1,11 @@
+body {
+    margin: 20%;
+    padding : 20%;
+    height: 100vh; /* 뷰포트 높이 100% */
+    width: 100vw; /* 뷰포트 너비 100% */
+    background-image: url('/public/images/background.png');
+    background-size: cover; /* 배경 이미지를 화면에 꽉 채우기 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+    background-position: center; /* 배경 이미지 중앙 정렬 */
+    overflow: hidden; /* 스크롤 방지 */
+}

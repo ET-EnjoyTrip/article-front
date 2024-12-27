@@ -1,0 +1,79 @@
+/* 전체 게시글 컨테이너 */
+.post {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.bubble-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%; /* 부모 요소 너비에 맞게 100% 설정 */
+}
+
+.left {
+  flex-direction: row; /* 왼쪽 말풍선 */
+}
+
+.right {
+  flex-direction: row-reverse; /* 오른쪽 말풍선 */
+}
+
+.profile-img {
+  margin: 0 10px;
+  align-self: flex-start;
+}
+
+.profile-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 말풍선 기본 스타일 */
+.bubble {
+  flex-grow: 1; /* 말풍선이 부모 요소의 남은 공간을 채우도록 설정 */
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  word-wrap: break-word;
+  max-width: 100%; /* 말풍선이 화면을 꽉 채우도록 설정 */
+}
+
+.left_bubble {
+  background-color: #FFF6D4;
+  color: #000;
+}
+
+.right_bubble {
+  background-color: #ffe282;
+  color: #000;
+}
+
+/* 말풍선 꼬리 */
+.bubble::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid;
+}
+
+.left .bubble::before {
+  left: -10px;
+  top: 15px;
+  border-top-color: #FFF6D4; /* 왼쪽 말풍선 꼬리 색상 */
+}
+
+.right .bubble::before {
+  right: -10px;
+  top: 15px;
+  border-top-color: #ffe282; /* 오른쪽 말풍선 꼬리 색상 */
+}
+
+button {
+  margin-top: 10px;
+}

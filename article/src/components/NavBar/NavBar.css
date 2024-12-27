@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 1;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-links {
+    display: flex;
+    gap: 15px; /* 링크 사이 간격 */
+    margin-left: auto; /* 오른쪽 끝으로 이동 */
+}
+
+.nav-link {
+    display: flex;
+    gap: 15px;
+    color: #FFF6D4;
+}
+
+.navBar .nav-link:hover {
+    color: #DAC374;
+    text-decoration: underline;
+}

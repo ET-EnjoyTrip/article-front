@@ -1,0 +1,17 @@
+.post-list-container {
+  margin: 20px;
+  background-color: rgba(245, 245, 245, 0.295);
+  min-height: 100vh;
+  border-radius: 5%;
+  padding: 0px 40px;
+ }
+ 
+ .post-list-content {
+  padding: 20px;
+  border-radius: 10px;
+ }
+ 
+ .post-list-title {
+  text-align: center;
+  margin-bottom: 30px;
+ }
